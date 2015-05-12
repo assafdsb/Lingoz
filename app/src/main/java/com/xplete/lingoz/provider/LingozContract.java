@@ -16,9 +16,6 @@ public class LingozContract {
     public static final String PATH_LEMMAS_GET_LEMMA_DETAILS = "getLemmaDetails";
     public static final String PATH_LEMMAS_GET_RANDOM_ROWS = "getRandomRows";
 
-    // answer choices
-    public static final String PATH_ANSWER_CHOICES = "answer_choices";
-
     // Translations
     public static final String PATH_TRANSLATIONS = "translations";
     public static final String PATH_TRANSLATIONS_GET_BY_LEMMA_ID = "getByLemmaId";

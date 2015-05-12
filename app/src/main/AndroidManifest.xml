@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.HeadwordListActivity"
-            android:label="@string/title_headword_list"
+            android:name=".activities.LemmaListActivity"
+            android:label="@string/title_lemma_list"
             android:parentActivityName=".activities.MainActivity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
             <meta-data
@@ -28,12 +28,13 @@
                 android:value="com.xplete.lingoz.activities.MainActivity" />
         </activity>
         <activity
-            android:name=".activities.HeadwordDetailActivity"
-            android:label="@string/title_headword_detail"
-            android:parentActivityName=".activities.HeadwordListActivity">
+            android:name=".activities.LemmaDetailActivity"
+            android:label="@string/title_lemma_detail"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:parentActivityName=".activities.LemmaListActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.xplete.lingoz.activities.HeadwordListActivity" />
+                android:value=".activities.LemmaListActivity" />
         </activity>
         <activity
             android:name=".activities.PreferencesActivity"

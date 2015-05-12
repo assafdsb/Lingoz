@@ -1,0 +1,10 @@
+﻿
+A traditional dictionaries company selling its content throughout the world from Tel Aviv (K Dictionaries, www.kdictionaries.com) is looking for new sources of income and to invent itself in the new electronic world. Lingoz aims to take K Dictionaries complex material and organize it to various apps for both supplying learners dictionaries and games utilizing that content for leaning and improving a foreign language.
+
+LINGOZ is the first step towards this goal and the infrastructure for further work.
+
+As a self containing all material LINGOZ does not require any special permission.
+
+LINGOZ properly works with app lifecycle, wisely uses Content Providers and Loaders for efficient use of resources. All screens can change orientation.
+
+LINGOZ calls implicit Intents (for sharing the app with friends).
