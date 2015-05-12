@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="main_menu_title">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/main_menu_title_color</item>
+    </style>
+
+    <style name="main_menu_custom_button_appearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+</resources>

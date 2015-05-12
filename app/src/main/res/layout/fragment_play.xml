@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/lingoz_background_color"
+    tools:context="com.xplete.lingoz.activities.PlayActivity.PlayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlayDefinition"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/dictionary_details_definition" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnAnswer1"
+                    android:layout_gravity="right"
+                    style="@style/play_answer_button" />
+
+                <Button
+                    android:id="@+id/btnAnswer2"
+                    android:layout_gravity="left"
+                    style="@style/play_answer_button" />
+            </TableRow>
+
+            <TableRow android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnAnswer3"
+                    android:layout_gravity="right"
+                    style="@style/play_answer_button" />
+
+                <Button
+                    android:id="@+id/btnAnswer4"
+                    android:layout_gravity="left"
+                    style="@style/play_answer_button" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

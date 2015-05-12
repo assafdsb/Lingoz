@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="translation_box_locale">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/translation_box_locale</item>
+    </style>
+
+    <style name="translation_box_translation">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/tanslation_box_translation</item>
+    </style>
+
+</resources>

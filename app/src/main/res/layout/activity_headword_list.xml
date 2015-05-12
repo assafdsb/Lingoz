@@ -1,0 +1,10 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headword_list"
+    android:name="com.xplete.lingoz.fragments.HeadwordListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="#FF0000"
+    tools:context="com.xplete.lingoz.activities.HeadwordListActivity"
+    tools:layout="@android:layout/list_content" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="preference_title">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/preference_title</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="preference_value">
+        <item name="android:textColor">@color/preference_value</item>
+        <!-- item name="android:gravity">center</item -->
+    </style>
+
+</resources>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@color/lingoz_background_color"
+    android:weightSum="8"
+    tools:context="com.xplete.lingoz.activities.PreferencesActivity">
+
+    <TextView
+        android:id="@+id/tvPreferredLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/prefs_preferred_languages"
+        style="@style/preference_title" />
+
+    <com.xplete.lingoz.custom_views.CustomLanguagesCheckedListView
+        android:id="@+id/lvLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        style="@style/preference_value" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prefs_word_of_the_day"
+            android:id="@+id/tvWordOfTheDay"
+            style="@style/preference_title" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/swWordOfTheDay"
+            style="@style/preference_value" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNotificationVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/prefs_app_volume"
+        style="@style/preference_title" />
+
+    <SeekBar
+        android:id="@+id/prefsSeekBarNotificationVolume"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/preference_value" />
+
+
+</LinearLayout>

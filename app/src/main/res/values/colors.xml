@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Lingoz General -->
+    <color name="lingoz_background_color">#EFF5FB</color>
+    <color name="black_overlay">#66000000</color>
+
+    <!-- Main Menu -->
+    <color name="main_menu_button_start_color">#CEECF5</color>
+    <color name="main_menu_button_end_color">#EFF8FB</color>
+    <color name="main_menu_title_color">#00BFFF</color>
+    <color name="main_menu_button_text">#086A87</color>
+    <color name="main_menu_button_border">#00BFFF</color>
+
+    <!-- Dictionary index -->
+    <color name="dictionary_index_caption">#086A87</color>
+    <color name="dictionary_index_pos">#00BFFF</color>
+    <color name="dictionary_index_letter_color">#EFF8FB</color>
+    <color name="dictionary_index_letter_background">#086A87</color>
+
+    <!-- Dictionary details -->
+    <color name="dictionary_details_lemma">#086A87</color>
+    <color name="dictionary_details_pos">#00BFFF</color>
+    <color name="dictionary_details_definition">#086A87</color>
+    <color name="dictionary_details_example">#086A87</color>
+    <color name="tanslation_box_translation">#086A87</color>
+    <color name="translation_box_locale">#00BFFF</color>
+    <color name="play_recording_pressed_button">#CEECF5</color>
+
+    <!-- Preference -->
+    <color name="preference_title">#086A87</color>
+    <color name="preference_value">#00BFFF</color>
+
+    <!-- Play -->
+    <color name="play_definition">#086A87</color>
+    <color name="play_answer_button">#086A87</color>
+    <color name="play_wrong_answer">#00BFFF</color>
+    <color name="play_answer_button_start_color">#CEECF5</color>
+    <color name="play_answer_button_end_color">#EFF8FB</color>
+    <color name="play_answer_button_stroke">#086A87</color>
+    <color name="play_correct_answer_button">#CEF6CE</color>
+    <color name="play_fail_answer_button">#F6D8CE</color>
+    <color name="play_fail_answer_button_stroke">#FF4000</color>
+
+    <!-- color name="play_next_button_start_color">#0B0B61</color>
+    <color name="play_next_button_stroke">#0B0B3B</color>
+    <color name="play_next_button_end_color">#0101DF</color -->
+    <color name="play_next_button_start_color">#086A87</color>
+    <color name="play_next_button_end_color">#00BFFF</color>
+    <color name="play_next_button_stroke">#086A87</color>
+    <color name="play_next_button_text_color">#E0ECF8</color>
+
+    <!-- About -->
+    <color name="about_color_major">#086A87</color>
+    <color name="about_color_minor">#00BFFF</color>
+
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LINGOZ</string>
+    <string name="main_menu_btn_play">Play</string>
+    <string name="main_menu_btn_dictionary">Dictionary</string>
+    <string name="main_menu_btn_preferences">Preferences</string>
+    <string name="main_menu_btn_share">Share</string>
+    <string name="main_menu_btn_about">About</string>
+    <string name="share_message_title">I\'m learning languages with LINGOZ app</string>
+    <string name="share_message_body">Go ahead and download LINGOZ.</string>
+    <string name="title_activity_dictionary">Dictionary</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_preferences">Preferences</string>
+    <string name="prefs_preferred_languages">Preferred Languages</string>
+    <string name="prefs_app_volume">App Volume</string>
+    <string name="prefs_word_of_the_day">Word of the Day</string>
+    <string name="title_lemma_list">Lemmas</string>
+    <string name="title_lemma_detail">Lemma Detail</string>
+    <string name="title_activity_dictionary_lemma_detail">Lemma Details</string>
+    <string name="title_activity_play">Play</string>
+    <string name="btn_play_next">Next</string>
+    <string name="title_activity_about">About</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about_courtesy">Textual and Audial content courtesy of K Dictionaries LTD.\nwww.kdictionaries.com</string>
+    <string name="about_link_to_kd">www.kdictionaries.com</string>
+    <string name="about_version_title">Version</string>
+    <string name="about_build_title">Build</string>
+    <string name="title_headword_list">Headwords</string>
+    <string name="title_headword_detail">Headword Detail</string>
+
+</resources>

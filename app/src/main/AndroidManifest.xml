@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xplete.lingoz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HeadwordListActivity"
+            android:label="@string/title_headword_list"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xplete.lingoz.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.HeadwordDetailActivity"
+            android:label="@string/title_headword_detail"
+            android:parentActivityName=".activities.HeadwordListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.xplete.lingoz.activities.HeadwordListActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PreferencesActivity"
+            android:label="@string/title_activity_preferences"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".activities.PlayActivity"
+            android:label="@string/title_activity_play"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+        <provider
+            android:name=".provider.LingozProvider"
+            android:authorities="com.xplete.lingoz.providers.LingozProvider"
+            android:exported="false" />
+
+        <receiver android:name=".receivers.WordOfTheDayBroadcastReceiver" />
+
+    </application>
+
+</manifest>
