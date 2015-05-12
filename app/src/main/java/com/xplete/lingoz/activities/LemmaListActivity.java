@@ -17,7 +17,7 @@ public class LemmaListActivity extends FragmentActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_headword_list);
+        setContentView(R.layout.activity_lemma_list);
 
         if (findViewById(R.id.lemma_detail_container) != null) {
             mTwoPane = true;
