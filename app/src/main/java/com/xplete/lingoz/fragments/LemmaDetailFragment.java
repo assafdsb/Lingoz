@@ -25,7 +25,7 @@ import com.xplete.lingoz.utils.AudioPlayer;
 
 import java.util.List;
 
-public class HeadwordDetailFragment extends Fragment {
+public class LemmaDetailFragment extends Fragment {
 
     public static final String LEMMA_ID = "lemma_id";
 
@@ -42,7 +42,7 @@ public class HeadwordDetailFragment extends Fragment {
 
     private int mLemmaId;
 
-    public HeadwordDetailFragment() {
+    public LemmaDetailFragment() {
     }
 
     @Override
@@ -58,7 +58,7 @@ public class HeadwordDetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_dictionary_lemma_detail, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_lemma_detail, container, false);
         mTvLemma = (TextView) rootView.findViewById(R.id.tvLemma);
         mTvPOS = (TextView) rootView.findViewById(R.id.tvPOS);
         mTvDefinition = (TextView) rootView.findViewById(R.id.tvDefinition);

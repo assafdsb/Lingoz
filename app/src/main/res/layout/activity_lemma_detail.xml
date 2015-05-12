@@ -1,8 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/headword_detail_container"
+    android:id="@+id/lemma_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lingoz_background_color"
-    tools:context="com.xplete.lingoz.activities.HeadwordDetailActivity"
+    tools:context="com.xplete.lingoz.activities.LemmaDetailActivity"
     tools:ignore="MergeRootFrame" />

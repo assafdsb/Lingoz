@@ -8,19 +8,19 @@
     android:divider="?android:attr/dividerHorizontal"
     android:orientation="horizontal"
     android:showDividers="middle"
-    tools:context="com.xplete.lingoz.activities.HeadwordListActivity">
+    tools:context="com.xplete.lingoz.activities.LemmaListActivity">
 
 
     <fragment
         android:id="@+id/headword_list"
-        android:name="com.xplete.lingoz.fragments.HeadwordListFragment"
+        android:name="com.xplete.lingoz.fragments.LemmaListFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
         tools:layout="@android:layout/list_content" />
 
     <FrameLayout
-        android:id="@+id/headword_detail_container"
+        android:id="@+id/lemma_detail_container"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3" />

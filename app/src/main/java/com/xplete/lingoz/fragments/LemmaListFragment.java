@@ -14,7 +14,7 @@ import com.xplete.lingoz.models.LemmaModel;
 
 import java.util.List;
 
-public class HeadwordListFragment extends ListFragment implements LoaderManager.LoaderCallbacks<List<LemmaModel>> {
+public class LemmaListFragment extends ListFragment implements LoaderManager.LoaderCallbacks<List<LemmaModel>> {
 
     private static final int INDEX_LOADER_ID = 1;
     private DictionaryIndexAdapter mAdapter;
@@ -35,7 +35,7 @@ public class HeadwordListFragment extends ListFragment implements LoaderManager.
         }
     };
 
-    public HeadwordListFragment() {
+    public LemmaListFragment() {
     }
 
     @Override

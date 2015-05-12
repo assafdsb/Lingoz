@@ -11,7 +11,7 @@ import android.graphics.BitmapFactory;
 import android.support.v4.app.NotificationCompat;
 
 import com.xplete.lingoz.R;
-import com.xplete.lingoz.activities.HeadwordDetailActivity;
+import com.xplete.lingoz.activities.LemmaDetailActivity;
 import com.xplete.lingoz.consts.CONSTS_DICTIONARY;
 import com.xplete.lingoz.database.Lemmas;
 import com.xplete.lingoz.models.LemmaModel;
@@ -36,7 +36,7 @@ public class WordOfTheDayBroadcastReceiver extends BroadcastReceiver {
 
             NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
-            Intent wordOfTheDayIntent = new Intent(context, HeadwordDetailActivity.class);
+            Intent wordOfTheDayIntent = new Intent(context, LemmaDetailActivity.class);
             wordOfTheDayIntent.putExtra(CONSTS_DICTIONARY.EXTRA_LEMMA_ID, lemma_id);
 
             PendingIntent contentIntent = TaskStackBuilder.create(context)

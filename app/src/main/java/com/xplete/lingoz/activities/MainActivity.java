@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.xplete.lingoz.R;
 import com.xplete.lingoz.consts.CONSTS_MAIN_MENU_MESSAGES;
@@ -16,7 +17,11 @@ import com.xplete.lingoz.utils.AlarmUtils;
 import com.xplete.lingoz.utils.PrefUtils;
 import com.xplete.lingoz.utils.Utils;
 
+import java.util.Date;
+
 public class MainActivity extends Activity {
+
+    private static final long DELAY_BETWEEN_BACK_PRESSES = 3500;
 
     private TextView mTvTitle;
     private CustomMainMenuButton mCustomButtonPlay;
@@ -26,6 +31,8 @@ public class MainActivity extends Activity {
     private CustomMainMenuButton mCustomButtonAbout;
 
     private Handler mHandlerMenu;
+    private long mBackPressedTimestamp = -1;
+    private Toast mExitToast;
 
 
     @Override
@@ -83,7 +90,7 @@ public class MainActivity extends Activity {
                         break;
                     }
                     case CONSTS_MAIN_MENU_MESSAGES.MENU_ITEM_DICTIONARY: {
-                        Intent i = new Intent(MainActivity.this, HeadwordListActivity.class);
+                        Intent i = new Intent(MainActivity.this, LemmaListActivity.class);
                         startActivity(i);
                         break;
                     }
@@ -104,5 +111,18 @@ public class MainActivity extends Activity {
             }
 
         };
+    }
+
+    @Override
+    public void onBackPressed() {
+        long now = (new Date()).getTime();
+        if (now - mBackPressedTimestamp < DELAY_BETWEEN_BACK_PRESSES) {
+            mExitToast.cancel();
+            finish();
+        } else {
+            mExitToast = Toast.makeText(this, getString(R.string.exit_app_message), Toast.LENGTH_LONG);
+            mExitToast.show();
+            mBackPressedTimestamp = now;
+        }
     }
 }

@@ -6,11 +6,11 @@ import android.support.v4.app.FragmentActivity;
 
 
 import com.xplete.lingoz.R;
-import com.xplete.lingoz.fragments.HeadwordDetailFragment;
-import com.xplete.lingoz.fragments.HeadwordListFragment;
+import com.xplete.lingoz.fragments.LemmaDetailFragment;
+import com.xplete.lingoz.fragments.LemmaListFragment;
 
-public class HeadwordListActivity extends FragmentActivity
-        implements HeadwordListFragment.Callbacks {
+public class LemmaListActivity extends FragmentActivity
+        implements LemmaListFragment.Callbacks {
 
     private boolean mTwoPane;
 
@@ -19,10 +19,10 @@ public class HeadwordListActivity extends FragmentActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_headword_list);
 
-        if (findViewById(R.id.headword_detail_container) != null) {
+        if (findViewById(R.id.lemma_detail_container) != null) {
             mTwoPane = true;
 
-            ((HeadwordListFragment) getSupportFragmentManager()
+            ((LemmaListFragment) getSupportFragmentManager()
                     .findFragmentById(R.id.headword_list))
                     .setActivateOnItemClick(true);
         }
@@ -32,16 +32,16 @@ public class HeadwordListActivity extends FragmentActivity
     public void onItemSelected(int id) {
         if (mTwoPane) {
             Bundle arguments = new Bundle();
-            arguments.putInt(HeadwordDetailFragment.LEMMA_ID, id);
-            HeadwordDetailFragment fragment = new HeadwordDetailFragment();
+            arguments.putInt(LemmaDetailFragment.LEMMA_ID, id);
+            LemmaDetailFragment fragment = new LemmaDetailFragment();
             fragment.setArguments(arguments);
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.headword_detail_container, fragment)
+                    .replace(R.id.lemma_detail_container, fragment)
                     .commit();
 
         } else {
-            Intent detailIntent = new Intent(this, HeadwordDetailActivity.class);
-            detailIntent.putExtra(HeadwordDetailFragment.LEMMA_ID, id);
+            Intent detailIntent = new Intent(this, LemmaDetailActivity.class);
+            detailIntent.putExtra(LemmaDetailFragment.LEMMA_ID, id);
             startActivity(detailIntent);
         }
     }
